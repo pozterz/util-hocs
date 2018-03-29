@@ -1,6 +1,7 @@
 import React from 'react'
+import withLoading from './withLoading'
 
-export default ({
+const DataList = ({
   propsToDataList
 }) => {
   return (
@@ -9,3 +10,5 @@ export default ({
     </div>
   )
 }
+
+export default withLoading(DataList)
